@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Message Handler Example Page</title>
+	<link href="css/redmond/jquery-ui-1.9.0.custom.css" rel="stylesheet">
+	<link href="css/jquery.ui.message-handler.css" rel="stylesheet">
+	<script src="javascript/library/jquery-1.8.2.js"></script>
+	<script src="javascript/library/jquery-ui-1.9.0.custom.js"></script>
+	<script src="javascript/jquery.ui.message-handler.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	/* <![CDATA[ */
+		$(document).ready(function() {
+			$('#info_message').click(function(e) {
+				e.preventDefault();
+				showInfoMessage("This is an example Info-Message", "Info-Message", function(data) {
+					alert("Return type: " + data);
+				});
+			});
+			
+			$('#error_message').click(function(e) {
+				e.preventDefault();
+				showErrorMessage("This is an example Error-Message", "Error-Message", function(data) {
+					alert("Return type: " + data);
+				});
+			});
+
+			$('#warning_message').click(function(e) {
+				e.preventDefault();
+				showWarningMessage("This is an example Warning-Message", "Warning-Message", function(data) {
+					alert("Return type: " + data);
+				});
+			});
+			
+			$('#exception_message').click(function(e) {
+				e.preventDefault();
+				showException("This could be an exception thrown in your framework", function(data) {
+					alert("Return type: " + data);
+				});
+			});
+		});
+	/* ]]> */
+	</script>
+</head>
+<body>
+	<fieldset>
+		<legend>Info Message</legend>
+		<pre>
+			showInfoMessage("This is an example Info-Message", "Info-Message", function(data) {
+				alert("Return type: " + data);
+			});
+		</pre>
+		<p>
+			<input id="info_message" type="button" value="Show Info-Message" />
+		</p>
+	</fieldset>
+	<fieldset>
+		<legend>Error Message</legend>
+		<pre>
+			showErrorMessage("This is an example Error-Message", "Error-Message", function(data) {
+				alert("Return type: " + data);
+			});
+		</pre>
+		<p>
+			<input id="error_message" type="button" value="Show Error-Message" />
+		</p>
+	</fieldset>
+	<fieldset>
+		<legend>Warning Message</legend>
+		<pre>
+			showWarningMessage("This is an example Warning-Message", "Warning-Message", function(data) {
+				alert("Return type: " + data);
+			});
+		</pre>
+		<p>
+			<input id="warning_message" type="button" value="Show Warning-Message" />
+		</p>
+	</fieldset>
+	<fieldset>
+		<legend>Exception Message</legend>
+		<pre>
+			showException("This could be an exception thrown in your framework", function(data) {
+				alert("Return type: " + data);
+			});
+		</pre>
+		<p>
+			<input id="exception_message" type="button" value="Show Exception-Message" />
+		</p>
+	</fieldset>
+</body>
+</html>

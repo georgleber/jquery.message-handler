@@ -1,0 +1,34 @@
+body {
+	font-size: 12px;
+}
+
+#message-dialog span {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin: 15px 15px 5px 0;
+}
+
+#message-dialog p {
+	padding-top: 10px;
+}
+
+#message-dialog span.icon-info {
+	background: url(../images/info.png) no-repeat;
+}
+
+#message-dialog span.icon-warn {
+	background: url(../images/warning.png) no-repeat;
+}
+
+#message-dialog span.icon-error {
+	background: url(../images/error.png) no-repeat;
+}
+
+#message-dialog .message-exception-scrollbox textarea {
+	margin: 20px 0 0 50px;
+	width: 85%;
+	height: 250px;
+	border: 1px solid #ccc;
+	resize: none;
+}
