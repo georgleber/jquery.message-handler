@@ -16,8 +16,16 @@ You need following libraries for this plugin:
 * jQuery 1.8.0+
 * jQuery UI 1.8+
 
+Changelog
+===============
++ **v1.0** [2012-10-15]
+  - public release
 
 License
 ===============
 
-Reseased under MIT License.
+Released under MIT License.
+
+* * *
+
+Copyright (c) 2012 Georg Henkel / Develman.de
