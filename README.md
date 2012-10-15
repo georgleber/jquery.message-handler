@@ -6,10 +6,21 @@ jQuery Javascript plugin, which shows up system messages like info, error or war
 
 ## Usage
 
-    showInfoMessage("This is an example Info-Message", "Info-Message", function(data) {
-        alert("Return type: " + data);
-    });
-    
+Include ``jquery.ui.message-handler.js`` in your HTML:
+
+```html
+<link rel="stylesheet" href="jquery.ui.message-handler.css" />
+<script type="text/javascript" src="jquery.ui.message-handler.js"></script>
+```
+
+You can show up the message dialogs as follows:
+
+```javascript
+showInfoMessage("This is an example Info-Message", "Info-Message", function(data) {
+    alert("Return type: " + data);
+});
+```
+
     
 ## Dependencies
 
