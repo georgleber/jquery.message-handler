@@ -19,6 +19,18 @@ You can show up the message dialogs as follows:
 showInfoMessage("This is an example Info-Message", "Info-Message", function(data) {
     alert("Return type: " + data);
 });
+
+showErrorMessage("This is an example Error-Message", "Error-Message", function(data) {
+    alert("Return type: " + data);
+});
+
+showWarningMessage("This is an example Warning-Message", "Warning-Message", function(data) {
+    alert("Return type: " + data);
+});
+
+showException("This could be an exception thrown in your framework", function(data) {
+    alert("Return type: " + data);
+});
 ```
 
     
